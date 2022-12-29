@@ -1,0 +1,10 @@
+syntax = "proto3";
+package tasks;
+option go_package = "github.com/mteodorov/buf-try/agents";
+
+import "gogoproto/gogo.proto";
+import "k8s.io/api/core/v1/generated.proto";
+
+message Event {
+  k8s.io.api.core.v1.EventList appResourceEventsResponse = 127;
+}

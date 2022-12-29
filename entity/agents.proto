@@ -1,0 +1,9 @@
+syntax = "proto3";
+package agents;
+option go_package = "github.com/mteodorov/buf-try/agents";
+
+import "gogoproto/gogo.proto";
+
+message Entity {
+  string  identifier = 1 [(gogoproto.moretags) = "bson:\"identifier,omitempty\""];
+}
