@@ -1,1 +1,1 @@
-# buf-try
+# type-try
